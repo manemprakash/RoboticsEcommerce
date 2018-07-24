@@ -4,32 +4,36 @@
 <meta charset="ISO-8859-1">
 
 <link href="./css/style.css"  rel="stylesheet">
+
 <link href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css" rel="stylesheet">
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" ></script>
 
 <title>E-Robotics</title>
 </head>
 <body>
 
 <div class="container-fluid">
-	<div class="d-flex p-3 flx-box text-white"></div>
 
 <div class="row">
-	<div class="col-md ">
+	<div class="col-md-2 ">
+			  <div class="pull-left"><img src="images/erobot.jpg" class="logo" width="200px" height="50px"></div>
+	</div>
+	<div class="col-md-10">
 	
-	<div class="card">
+	<div class="card search-bar">
 	
 	<div class="card-body">
 		  <div class="row">
-		  <div class="col-sm-2 pull-left"><img src="images/erobot.jpg" class="logo" width="200px" height="50px"></div>
-		  <div class="col-sm-6">
+		  <div class="col-sm-8">
 		  	<div class="input-group col-md-12">
       			<input class="form-control py-2" type="search" placeholder="Search for Robotics &amp; Videos" id="example-search-input">
 	      		<span class="input-group-append">
-			        <button class="btn btn-outline-secondary" type="button">Search
+			        <button class="btn btn-outline-secondary btn-search" type="button">Search
 			            <i class="fa fa-search"></i>
 			        </button>
 	      		</span>
@@ -39,9 +43,11 @@
 		  
 		  	<div class="d-flex justify-content-end">
 		  	
-		  		<div class="p-2"><span>Cart</span></div>
-    			<div class="p-2"><span>Login / Sign-in</span></div>
-    			<div class="p-2"><span>Offers</span></div>
+		  		<div class="p-2">Cart <i class="fa fa-shopping-cart" aria-hidden="true"></i></div>
+    			<div class="p-2">Login <i class="fa fa-user" aria-hidden="true"></i></div>
+    			<div class="p-2">Offers <i class="fa fa-gift" aria-hidden="true"></i>
+
+</img></div>
 		  	</div>
 		  
 		  </div>		    
@@ -55,18 +61,18 @@
 
     <div class="row">
         <div class="col-sm-2 col-md-2">
-            <div  id="accordion">
+            <div  id="accordion" class="accordion">
             <div class="card">
-                <div class="card-header">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-                            <span class="oi oi-spreadsheet"></span>Content</a>
+                <div class="card-header collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                            <a >
+                            <span class="oi oi-spreadsheet"></span>Robotic kits</a>
                 </div>
-                    <div id="collapseOne" class="panel-collapse collapse in">
-                        <div class="card-body">
+                    <div id="collapseOne" class=" collapse in">
+                        <div class="card-body" data-parent="#accordion">
                             <table class="table">
                                 <tr>
                                     <td>
-                                        <span class="glyphicon glyphicon-pencil text-primary"></span><a href="http://www.jquery2dotnet.com">Articles</a>
+                                        <span class="glyphicon glyphicon-pencil text-primary"></span><a href="http://www.jquery2dotnet.com">Mechanical Robots</a>
                                     </td>
                                 </tr>
                                 <tr>
@@ -89,15 +95,14 @@
                         </div>
                     </div>
                 </div>
-                </div>
                 <div class="card">
-                    <div class="card-header">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"><span class="glyphicon glyphicon-th">
-                            </span>Modules</a>
+                    <div class="card-header collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                            <a ><span class="glyphicon glyphicon-th">
+                            </span>Robotic Spares</a>
                         
                     </div>
-                    <div id="collapseTwo" class="panel-collapse collapse">
-                        <div class="card-body">
+                    <div id="collapseTwo" class=" collapse">
+                        <div class="card-body" data-parent="#accordion">
                             <table class="table">
                                 <tr>
                                     <td>
@@ -124,12 +129,12 @@
                     </div>
                 </div>
                 <div class="card">
-                    <div class="card-header">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree"><span class="oi oi-person">
-                            </span>Account</a>
+                    <div class="card-header collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                            <a ><span class="oi oi-person">
+                            </span>Science lab Kits</a>
                     </div>
-                    <div id="collapseThree" class="panel-collapse collapse">
-                        <div class="card-body">
+                    <div id="collapseThree" class=" collapse">
+                        <div class="card-body" data-parent="#accordion">
                             <table class="table">
                                 <tr>
                                     <td>
@@ -157,21 +162,21 @@
                     </div>
                 </div>
                 <div class="card">
-                    <div class="card-header">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour"><span class="oi oi-bar-chart">
-                            </span>Reports</a>
+                    <div class="card-header collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                            <a ><span class="oi oi-bar-chart">
+                            </span>Practical Kits</a>
                     </div>
-                    <div id="collapseFour" class="panel-collapse collapse">
-                        <div class="panel-body">
+                    <div id="collapseFour" class=" collapse">
+                        <div class="card-body" data-parent="#accordion">
                             <table class="table">
                                 <tr>
                                     <td>
-                                        <span class="glyphicon glyphicon-usd"></span><a href="http://www.jquery2dotnet.com">Sales</a>
+                                        <span class="glyphicon glyphicon-usd"></span><a href="#">Sales</a>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="glyphicon glyphicon-user"></span><a href="http://www.jquery2dotnet.com">Customers</a>
+                                        <span class="glyphicon glyphicon-user"></span><a href="#">Customers</a>
                                     </td>
                                 </tr>
                                 <tr>
@@ -189,35 +194,65 @@
                     </div>
                 </div>
             </div>
+           </div>
+            
         
         <div class="col-md-10">
             <div class="well">
-                <div class="row">
+                <div class="row category">
                 <div class="col-sm">
                 	
                 	<div class="card">
                 	
                 	<div class="card-header" id="product1">
-                		<span>Category 1</span>
+                		<div class="category-name">Robotic Kits</div>
                 	</div>
                 	<div class="card-body">
                 	
                 		<div class="container-fluid">
                 			<div class="row">
                 				<div class="col">
-                					<img src="images/prod1.jpg" class="img-thumbnail prod-img" alt="Cinque Terre">
+                					<div class="card shadow">
+                					<img src="images/prod1.jpg" class="card-img-top img-thumbnail" alt="Cinque Terre">
+                					<div class="card-body">
+                					<h5 class="card-title">Robot 1</h5>
+    								<p class="card-text">Price: &#8377; 520</p>
+                					</div>
+                					</div>
                    				</div>
                 				<div class="col">
-                					<img src="images/prod2.jpeg" class="img-thumbnail prod-img" alt="Cinque Terre">
+                					<div class="card shadow">
+	                					<img src="images/prod2.jpeg" class="card-img-top img-thumbnail" alt="Cinque Terre">
+	                   				    <div class="card-body">
+		                   				    <h5 class="card-title">Robot 2</h5>
+		                   				    <p class="card-text">Price: &#8377; 520</p>
+	                   				    </div>
+                   				    </div>
                    				</div>
                 				<div class="col">
-                					<img src="images/prod3.png" class="img-thumbnail prod-img" alt="Cinque Terre">
+                				<div class="card shadow">
+                					<img src="images/prod3.png" class="card-img-top img-thumbnail" alt="Cinque Terre">
+                					<div class="card-body">
+                  						<h5 class="card-title">Robot 3</h5>
+                						<p class="card-text">Price: &#8377; 520</p>
+                					</div>
+                				</div>
+                					
                 				</div>
                 			    <div class="col">
-                					<img src="images/prod5.jpg" class="img-thumbnail prod-img" alt="Cinque Terre">		
+                			    <div class="card shadow">
+                					<img src="images/prod5.jpg" class="card-img-top img-thumbnail" alt="Cinque Terre">		
+                					<div class="card-body">
+                  						<h5 class="card-title">Robot 4</h5>
+                						<p class="card-text">Price: &#8377; 520</p>
+                					</div>
+                					
                 			    </div>
-                			
                 			</div>
+                			</div>
+                		</div>
+                		<div class="float-right more-link">
+                			<a href="#" class="card-link">More ...</a>
                 		</div>
                 	
                 	</div>
@@ -226,38 +261,60 @@
                 	
                 </div>
                 </div>
-                <div class="row">
+                <div class="row category">
                 <div class="col-sm">
                     <div class="card">
                     
                     <div class="card-header" id="product2">
-                		<span>Category 2</span>
+                		<div class="category-name">Robotic Spares</div>
                 	</div>
                 	<div class="card-body">
                 	
                 	<div class="container-fluid">
                 			<div class="row">
                 				<div class="col">
-                					<div class="card">
-                						<div class="card-body product"></div>
+                				<div class="card shadow">
+                					<img src="images/prod1.jpg" class="img-thumbnail card-img-top" alt="Cinque Terre">
+                					<div class="card-body">
+                					<h5 class="card-title">Robot 1</h5>
+                					<p class="card-text">Price: &#8377; 520</p>
                 					</div>
                 				</div>
+                   				</div>
                 				<div class="col">
-                					<div class="card">
-                						<div class="card-body product"></div>
+                				<div class="card shadow">
+                					<img src="images/prod2.jpeg" class="img-thumbnail card-img-top" alt="Cinque Terre">
+                   				    <div class="card-body">
+                   				    <h5 class="card-title">Robot 2</h5>
+                   				    <p class="card-text">Price: &#8377; 520</p>
+                   				    </div>
+                   				    </div>
+                   				
+                   				</div>
+                				<div class="col">
+                				<div class="card shadow">
+                					<img src="images/prod3.png" class="img-thumbnail card-img-top" alt="Cinque Terre">
+                					<div class="card-body">
+                  					<h5 class="card-title">Robot 3</h5>
+                					<p class="card-text">Price: &#8377; 520</p>
                 					</div>
-                				</div>
-                				<div class="col">
-                					<div class="card">
-                						<div class="card-body product"></div>
                 					</div>
                 				</div>
                 			    <div class="col">
-									<div class="card">
-                						<div class="card-body product"></div>
+                			    <div class="card shadow">
+                					<img src="images/prod5.jpg" class="img-thumbnail card-img-top" alt="Cinque Terre">		
+                					<div class="card-body">
+                					<h5 class="card-title">Robot 4</h5>
+                					<p class="card-text">Price: &#8377; 520</p>
                 					</div>
+                					</div>
+                					</div>
+                					
                 			    </div>
                 			
+                			</div>
+                			<div class="float-right more-link">
+                			<a href="#" class="card-link">More ...</a>
                 			</div>
                 		</div>
                 	
@@ -268,42 +325,60 @@
                 </div>
                 </div>
                 
-                 <div class="row">
+                 <div class="row category">
                 <div class="col-sm">
                     <div class="card">
                     
                     <div class="card-header" id="product3">
-                		<span>Category 3</span>
+                		<div class="category-name">Science lab Kits</div>
                 	</div>
                 	<div class="card-body">
                 	
                 	<div class="container-fluid">
                 			<div class="row">
                 				<div class="col">
-                					<div class="card">
-                						<div class="card-body product"></div>
+                				<div class="card shadow">
+                					<img src="images/prod1.jpg" class="img-thumbnail card-img-top" alt="Cinque Terre">
+                					<div class="card-body">
+                					<h5 class="card-title">Robot 1</h5>
+                					<p class="card-text">Price: &#8377; 520</p>
                 					</div>
-                				</div>
-                				<div class="col">
-                					<div class="card">
-                						<div class="card-body product"></div>
                 					</div>
-                				</div>
+                   				</div>
                 				<div class="col">
-                					<div class="card">
-                						<div class="card-body product"></div>
+                				<div class="card shadow">
+                					<img src="images/prod2.jpeg" class="img-thumbnail card-img-top" alt="Cinque Terre">
+                   				    <div class="card-body">
+                   				    <h5 class="card-title">Robot 2</h5>
+                   				    <p class="card-text">Price: &#8377; 520</p>
+                   				    </div>
+                   				     </div>
+                   				</div>
+                				<div class="col">
+                				<div class="card shadow">
+                					<img src="images/prod3.png" class="img-thumbnail card-img-top" alt="Cinque Terre">
+                					<div class="card-body">
+                  					<h5 class="card-title">Robot 3</h5>
+                					<p class="card-text">Price: &#8377; 520</p></div>
                 					</div>
                 				</div>
                 			    <div class="col">
-									<div class="card">
-                						<div class="card-body product"></div>
+                			    <div class="card shadow">
+                					<img src="images/prod5.jpg" class="img-thumbnail card-img-top" alt="Cinque Terre">		
+                					<div class="card-body">
+                					<h5 class="card-title">Robot 4</h5>
+                					<p class="card-text">Price: &#8377; 520</p>
+                					</div>
                 					</div>
                 			    </div>
                 			
                 			</div>
                 		</div>
-                	
+                		<div class="float-right more-link">
+                			<a href="#" class="card-link">More ...</a>
+                		</div>
                 	</div>
+                	
                     
                     </div>
                 
@@ -316,7 +391,7 @@
       <div class="container">
   			<div class="row text-center text-white">
 				<div class="col-sm-12 ">
-					<p><u><a href="#">ERobotics</a></u> is a Registered , Inc. Bengaluru 
+					<p><a href="#">ERobotics</a> is a Registered , Inc. Bengaluru 
 					&copy All right Reversed.<a class="text-green ml-2" href="https://www.sunlimetech.com" target="_blank">Dhanunjaya</a></p>
 				</div>
 				<hr>
@@ -324,7 +399,6 @@
 	   </div>
     </div>
 
-</div>
 
 
 </body>
