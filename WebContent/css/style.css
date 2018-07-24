@@ -1,4 +1,8 @@
 
+body{
+	background: #f9f8f7!important;
+}
+
 .oi { margin-right:10px; }
 
 
@@ -6,12 +10,12 @@
 .keyword {width:80%; float:left;}
 
 .footer-bottom{
-  background: #92b3ef;
+  background: #0972a7;
   padding-top: 5px;
 }
 
 .flx-box{
-	background-color: #92b3ef;
+	background-color: #0972a7;
 }
 
 .top-menu{
@@ -28,20 +32,106 @@
 }
 
 #product1 {
-	background-color: #607dcc;
-	height: 40px;
+	
+	background: #0972a7; 
+	height: 35px;
+	font-weight: 500;
+	
 }
 
 #product2 {
-	background-color: #d74d1e;
-	height: 40px;
+	
+	background: #0972a7; 
+	height: 35px;
+	font-weight: 500;
+	vertical-align:middle;	
+}
+
+.icon{
+	width: 20px;
+	height: 20px;
+	margin-right: 10px;
 }
 
 #product3 {
-	background-color: #dfbe4d;
-	height: 40px;
+	background: #0972a7; 
+	height: 35px;
+	font-weight: 500;
 }
 
 .img-thumbnail {
-	height: 180px;
+	height: 180px !important;
+	width: 233px;
+}
+
+.img-thumbnail:hover {
+	transform: scale(1.18);
+}
+
+.p-2{
+	color: #ffffff;
+}
+
+.category{
+	margin-top: 8px;
+}
+
+
+
+.search-bar{
+	background-color: #0972a7 !important;
+}
+
+.btn-search{
+	background-color: white !important;
+}
+
+.btn-search:hover{
+	background-color: black !important;
+}
+
+#accordion{
+	margin-top: 10px;
+}
+
+.category-name{
+	margin-top: -8px;
+	color: white;
+}
+
+.accordion .card-header:after {
+    font-family: 'FontAwesome';  
+    float: right; 
+    content: "\f077"; 
+    
+}
+
+.accordion .card-header.collapsed:after {
+    /* symbol for "collapsed" panels */
+        font-family: 'FontAwesome';  
+        content: "\f078";
+        
+    
+}
+
+.accordion .card-header {
+	
+	 background-color: #0972a7;
+	 color: white;
+	
+}
+
+
+
+.shadow {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.more-link {
+	
+	margin-top: 10px;
+}
+
+.card-title{
+	color: #685eec;
 }
